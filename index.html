@@ -13,14 +13,26 @@
 		</header>
 		<main>
 			<section class="word">
-				<div id="word_hat">
-					<span id="word_hat_content">word</span>
+				<div id="word_hat_one">
+					word
 				</div>
-				<span id="word_content">j ? z z</span>
+				<!---->
+				<div id="word_hat_two">
+					word length
+				</div>
+				<button onclick="find_length(-1)" class="length" id="minus">-</button>
+				<span class="length" id="word_length_content">1</span>
+				<button onclick="find_length(1)" class="length" id="plus">+</button>
+				<br />
+				<button onclick="remove_numselector()" id="done" class="length">
+					start
+				</button>
 			</section>
 		</main>
 		<footer></footer>
 		<script src="web scripts/array.js"></script>
 		<script src="web scripts/count.js"></script>
+		<script src="web scripts/regex.js"></script>
+		<script src="web scripts/process.js"></script>
 	</body>
 </html>

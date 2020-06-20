@@ -34,20 +34,21 @@ main {
 	width: 60%;
 	height: 121px;
 	margin: 172px 20%;
-
 	background: #7db9b3;
 	box-shadow: -5px 8px 4px rgba(0, 0, 0, 0.1);
 	border-radius: 30px;
 }
-
 .word {
 	text-align: center;
 	padding: 25px auto;
+	line-height: 0px;
 }
+
 #word_content {
 	font-size: 54px;
 }
-#word_hat {
+#word_hat_one,
+#word_hat_two {
 	position: absolute;
 	width: 80px;
 	height: 33px;
@@ -55,9 +56,33 @@ main {
 	top: -16px;
 	background-color: #2e3837;
 	border-radius: 5px;
+	line-height: 15px;
+	color: var(--white);
+}
+#word_hat_one {
+	line-height: 30px;
 }
 #word_hat_content {
-	line-height: -5px;
-	color: var(--white);
+	margin-top: 0px;
+
 	position: relative;
+}
+
+.length {
+	margin-top: 10px;
+	font-size: 60px;
+}
+
+#plus,
+#minus {
+	font-family: MuseoModerno;
+	border-radius: 500px;
+	width: 50px;
+	background-color: var(--white);
+}
+#done {
+	margin-top: 50px;
+	border-radius: 10px;
+	border-width: 10px;
+	font-family: MuseoModerno;
 }

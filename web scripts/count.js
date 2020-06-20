@@ -63,6 +63,3 @@ function loop_regex(character) {
 }
 
 loop_array();
-
-//! Regex stuffs
-//!  regex.test() returns boolean match

@@ -1,5 +1,6 @@
 document.getElementById('word_hat_one').style.display = 'none';
 //1st - Prompt user for word length
+let readyforbuild = false;
 length = 1;
 function find_length(num) {
 	if (length + num >= 1 && length + num <= 14) {
@@ -17,7 +18,8 @@ function remove_numselector() {
 	}
 	document.getElementById('word_hat_two').style.display = 'none';
 	document.getElementById('word_hat_one').style.display = 'block';
-}
+	readyforbuild = true;
 
-//3rd - Build and display the word
-build_word(length);
+	//3rd - Build and display the word
+	document.getElementById('word').innerHTML = build_word(length);
+}

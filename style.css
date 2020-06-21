@@ -86,3 +86,8 @@ main {
 	border-width: 10px;
 	font-family: MuseoModerno;
 }
+#word {
+	line-height: 130px;
+	font-size: 55px;
+	letter-spacing: 17px;
+}

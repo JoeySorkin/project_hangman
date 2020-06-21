@@ -14,6 +14,7 @@ function build_word(length_of_word) {
 	for (i = 0; i < length_of_word; i++) {
 		letters[i] = '?';
 	}
+	return letters.join('');
 }
 function edit_word(letter, number) {
 	letters.splice(number - 1, 1, letter);

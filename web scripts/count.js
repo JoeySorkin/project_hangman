@@ -1,4 +1,4 @@
-var letter_set = [
+let letter_set = [
 	'a',
 	'b',
 	'c',
@@ -27,12 +27,10 @@ var letter_set = [
 	'z'
 ];
 
-var string = 'carwash';
-
-function loop_array() {
+function loop_array(string) {
 	common_array = [];
 	for (let i = 0; i < letter_set.length; i++) {
-		common_array.push(loop_regex(letter_set[i]));
+		common_array.push(loop_regex(letter_set[i], string));
 	}
 
 	let greatest = ['a', 0];
@@ -41,10 +39,10 @@ function loop_array() {
 			greatest = common_array[i];
 		}
 	}
-	console.log(greatest);
+	return greatest;
 }
 
-function loop_regex(character) {
+function loop_regex(character, string) {
 	char = '/' + character + '/g';
 	most_common = ['default', 0];
 	// character = /{character}/g`;
@@ -62,4 +60,10 @@ function loop_regex(character) {
 	return most_common;
 }
 
-loop_array();
+function update_array(remove_letter) {
+	for (var i = letter_set.length - 1; i >= 0; i--) {
+		if (letter_set[i] === remove_letter) {
+			letter_set.splice(i, 1);
+		}
+	}
+}
